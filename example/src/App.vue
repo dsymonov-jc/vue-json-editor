@@ -17,16 +17,25 @@
         <vue-json-pretty :data="dataOutput"> </vue-json-pretty>
       </div>
     </div>
+    <div class="container">
+      <div class="json-edit">
+        <json-builder
+          :data-input="dataOutput"
+          
+        ></json-builder>
+      </div>
+    </div>
   </div>
 </template>
 <script>
-import JsonEditor from '../../dist/vue-json-editor';
+import { JsonEditor, JsonBuilder } from '../../dist/vue-json-editor';
 import VueJsonPretty from 'vue-json-pretty';
 
 export default {
   name: 'app',
   components: {
     JsonEditor,
+    JsonBuilder,
     VueJsonPretty,
   },
   data() {
