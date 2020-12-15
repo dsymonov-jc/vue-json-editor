@@ -19,10 +19,7 @@
     </div>
     <div class="container">
       <div class="json-edit">
-        <json-builder
-          :data-input="dataOutput"
-          
-        ></json-builder>
+        <json-builder :data-input="dataOutput"></json-builder>
       </div>
     </div>
   </div>

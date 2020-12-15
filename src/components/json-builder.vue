@@ -46,7 +46,7 @@ export default {
 
         if (newDataStr === JSON.stringify(this.cachedData)) return;
 
-const json = buildJson(newDataStr, this.rootType);
+        const json = buildJson(newDataStr, this.rootType);
         this.transformData = this.formatJson(json);
         this.cachedData = JSON.parse(newDataStr);
 
